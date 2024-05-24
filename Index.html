@@ -1,1 +1,72 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Complete Form Structure</title>
+        <link rel="Stylesheet" href="Style.css">
+    </head>
+    <body>
+        <h1>User Registation From</h1>
+        <form name="Form" onsubmit="">
+            <table border="0">
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" name="username" placeholder="Username">
+                        <p>Username must be  and contain 5 - 12 characters</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password" placeholder="Password">
+                        <p>Password must alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Confirm Password</td>
+                    <td><input type="password" name="Cpassword" placeholder="Confirm Password">
+                        <p>Password must alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea name="address" cols="50" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="email" placeholder="Email">
+                        <p>Email must be a valid address, e.g. me@mydomain.com</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Telephone</td>
+                    <td><input type="text" name="telephone" placeholder="Telephone Number">
+                        <p>Telephone must be a valid SL telephone number (10 digits)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><input type="radio" class="checkbox" name="sex" value="Male">Male
+                        <input type="radio" class="checkbox" name="sex" value="Female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td><select name="Country" class="menu">
+                        <option value="Default">--Select--</option>
+                        <option value="Sri Lanka">Sri Lanka</option>
+                        <option value="America">America</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Germany">Germany</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
